@@ -26,7 +26,6 @@ pipeline {
         echo "SOME_VAR is $SOME_VAR"
         echo "INBETWEEN is $INBETWEEN"
         dir
-        gradlew.bat build
 
       }
     }
