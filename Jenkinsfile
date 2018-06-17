@@ -6,6 +6,7 @@ pipeline {
 
   agent any
 
+    node {
   def customImage = ""
 
   stages {
@@ -33,6 +34,6 @@ pipeline {
     }
 
 
-
+    }
   }
 }
