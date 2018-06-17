@@ -6,7 +6,7 @@ pipeline {
 
   agent any
 
-  def customImage
+  def customImage = ""
 
   stages {
     stage("build") {
