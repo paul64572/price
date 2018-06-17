@@ -6,6 +6,8 @@ pipeline {
 
   agent any
 
+  def customImage
+
   stages {
     stage("build") {
       steps {
@@ -25,7 +27,7 @@ pipeline {
       steps {
         echo "SOME_VAR is $SOME_VAR"
         echo "INBETWEEN is $INBETWEEN"
-        def customImage = docker.build("trading-price:1.0.1")
+        customImage = docker.build("trading-price:1.0.1")
         customImage.push()
       }
     }
