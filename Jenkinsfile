@@ -25,7 +25,7 @@ pipeline {
       steps {
         echo "SOME_VAR is $SOME_VAR"
         echo "INBETWEEN is $INBETWEEN"
-        docker.build("trading-price:1.0.1")
+        gradlew build
 
       }
     }
