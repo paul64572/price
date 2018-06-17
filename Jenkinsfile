@@ -25,7 +25,7 @@ pipeline {
       steps {
         echo "SOME_VAR is $SOME_VAR"
         echo "INBETWEEN is $INBETWEEN"
-        dir
+        sh 'dir'
 
       }
     }
